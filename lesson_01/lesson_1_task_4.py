@@ -1,7 +1,7 @@
 # Определение функции
-def greeting():
+def print_greeting():
     print("Привет, мир!")
 
 
 # Вызов функции
-greeting()
+print_greeting()
