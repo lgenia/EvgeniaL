@@ -1,7 +1,8 @@
 from mailing import Mailing
+from address import Address
 
-to_address = ("456910", "Сатка", "Солнечная", "21", "5")
-from_address = ("666123", "Екатеринбург", "Космонавтов", "7", "197")
+to_address = Address("456910", "Сатка", "Солнечная", 21, 5)
+from_address = Address("666123", "Екатеринбург", "Космонавтов", 7, 197)
 track = "Отправление"
 cost = "100 рублей"
 

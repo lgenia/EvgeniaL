@@ -10,5 +10,5 @@ class User:
     def get_last_name(self):
         return self.last_name
 
-    def get_User_info(self):
+    def get_user_info(self):
         return f"First: {self.first_name}, Last: {self.last_name}"
