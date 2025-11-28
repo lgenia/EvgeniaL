@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 def test_buttons():
@@ -7,7 +8,7 @@ def test_buttons():
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/data-types.html")
 
-    driver.implicitly_wait(7)
+    driver = WebDriverWait(7)
 
     first_name = driver.find_element(
         By.CSS_SELECTOR, "[name='first-name']")
@@ -19,7 +20,7 @@ def test_buttons():
     last_name.click()
 
     address = driver.find_element(
-        By.CSS_SELECTOR, "[name='address'")
+        By.CSS_SELECTOR, "[name='address']")
     address.send_keys('Ленина, 55-3')
     address.click()
 
@@ -30,7 +31,7 @@ def test_buttons():
 
     phone = driver.find_element(
         By.CSS_SELECTOR, "[name='phone']")
-    phone.send_keys(+7985899998787)
+    phone.send_keys("+7985899998787")
     phone.click()
 
     city = driver.find_element(

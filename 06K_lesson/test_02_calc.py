@@ -24,7 +24,9 @@ def test_calculator(browser):
         xpath = f"//span[text()='{button}']"
         browser.find_element(By.XPATH, xpath).click()
 
-    result = WebDriverWait(browser, 46).until(
-        EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".screen"), "15")
+    result_element = WebDriverWait(browser, 46).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, ".screen"))
     )
-    assert result
+
+    result_text = result_element.text
+    assert "15" in result_text
