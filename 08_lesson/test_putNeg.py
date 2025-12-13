@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 def test_update_project_negative_nonexistent_id():
     # Негативный тест обновления несуществующего проекта
 
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     non_existent_id = 999999
     endpoint = f'/api-v2/projects/{non_existent_id}'
     full_url = urljoin(base_url, endpoint)

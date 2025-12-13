@@ -6,7 +6,7 @@ from urllib.parse import urljoin
 def test_create_project_positive():
     # Позитивный тест создания проекта
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     endpoint = '/api-v2/projects/'
     full_url = urljoin(base_url, endpoint)
     
@@ -24,7 +24,7 @@ def test_create_project_positive():
 def test_create_project_negative_missing_name():
     # Негативный тест создания проекта без имени
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     endpoint = '/api-v2/projects/'
     full_url = urljoin(base_url, endpoint)
     
@@ -41,7 +41,7 @@ def test_create_project_negative_missing_name():
 def test_update_project_positive(project_id):
     # Позитивный тест обновления проекта
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     endpoint = f'/api-v2/projects/{project_id}'
     full_url = urljoin(base_url, endpoint)
     
@@ -59,7 +59,7 @@ def test_update_project_positive(project_id):
 def test_update_project_negative_nonexistent_id():
     # Негативный тест обновления несуществующего проекта
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     non_existent_id = 999999
     endpoint = f'/api-v2/projects/{non_existent_id}'
     full_url = urljoin(base_url, endpoint)
@@ -76,7 +76,7 @@ def test_update_project_negative_nonexistent_id():
 def test_get_project_positive(project_id):
     # Позитивный тест получения информации о проекте
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     endpoint = f'/api-v2/projects/{project_id}'
     full_url = urljoin(base_url, endpoint)
     
@@ -89,7 +89,7 @@ def test_get_project_positive(project_id):
 def test_get_project_negative_nonexistent_id():
     # Негативный тест получения информации о несуществующем проекте
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     non_existent_id = 999999
     endpoint = f'/api-v2/projects/{non_existent_id}'
     full_url = urljoin(base_url, endpoint)

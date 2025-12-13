@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 def test_get_project_positive(project_id):
     # Позитивный тест получения информации о проекте
     
-    base_url = 'http://your-api-url.com'
+    base_url = 'http://ru.yougile.com'
     endpoint = f'/api-v2/projects/{project_id}'
     full_url = urljoin(base_url, endpoint)
     
