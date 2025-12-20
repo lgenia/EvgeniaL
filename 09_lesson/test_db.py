@@ -1,6 +1,6 @@
 from database import Database
 
-DB_CONNECTION = "postgresql://kate_nikonova:12345@localhost:5432/postgres"
+DB_CONNECTION = "postgresql://postgres:YV1018sql@localhost:5432/python_db"
 db = Database(DB_CONNECTION)
 
 def test_add_user():
